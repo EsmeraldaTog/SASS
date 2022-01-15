@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.contenedor__principal {
+
+  background-color: white;
+   display:grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(5, auto);
+
+  grid-template-areas:
+  "header  header"
+  "principal principal"
+  "imagenes imagenes"
+  "sucursales_index sucursales_index"
+ "footer   footer";
+
+}
+
+
+.header__area {
+grid-area: header;
+}
+
+.main__contenedor {
+  grid-area: principal;
+  }
+  
+
+.seccion__anuncios {
+grid-area: imagenes;
+}
+
+.sucursales_index{
+  grid-area: sucursales_index;
+
+}
+  
+.redes__footer {
+grid-area: footer;
+}
+
+.sucursales_index{
+  margin-bottom: 50px;
+}
+
+
+
+
+.header__logo {
+  max-width: 100%;
+}
+
+/*.header__nav {
+}*/
+.header__list {
+  display: flex;
+  list-style: none;
+
+  /*justify-content: flex-end;*/
+ 
+  
+}
+
+.header__Item {
+  border: 15px;
+  margin: 0px 6px;
+  font-weight: 400;
+  color: red;
+  font-weight: 400 bold;
+  
+
+ 
+}
+
+
+
+
+.main__contenedor {
+  width: 100%;
+  padding:20px;
+}
+
+
+.hero__imagen{
+ width: 80%;
+}
+
+.sucursales_principal{
+  text-align: center;
+}
+
+.seccion__anuncios{
+  padding-bottom: 60px;
+}
+
+
+
+
+
+.redes__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+
+ 
+}
+
+.contenedor__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.header__list2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: 400;
+  
+}
+
+.footer__link {
+  
+  /*background-color: lightseagreen;*/
+  
+  color: gray;
+  font-weight: bold  400 ;
+  color: #2552D9;
+  text-decoration: none;
+}
+
+
+.redes{
+  text-align: center;
+}
+
+.redes__titulo {
+  margin: 5px;
+  text-align: center;
+  color: #7E9BF2;
+  font-weight: 300 bold;
+}
+
+ 

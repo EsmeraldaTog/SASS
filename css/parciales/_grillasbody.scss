@@ -1,0 +1,81 @@
+.contenedor__principal {
+  
+    background-color: $color-fondo;
+     display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(5, auto);
+  
+    grid-template-areas:
+    "header  header"
+    "principal principal"
+    "imagenes imagenes"
+    "sucursales_index sucursales_index"
+   "footer   footer";
+  
+  }
+  
+  
+  .header__area {
+  grid-area: header;
+  }
+  
+  .main__contenedor {
+    grid-area: principal;
+    }
+    
+  
+  .seccion__anuncios {
+  grid-area: imagenes;
+  }
+  
+  .sucursales_index{
+    grid-area: sucursales_index;
+  
+  }
+    
+  .redes__footer {
+  grid-area: footer;
+  }
+  
+/*EMPIEZA grilla principal contacto*/
+
+.contenedor__contacto {
+  background-color:  $color-fondo;
+
+  display:grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(3, auto);
+
+  grid-template-areas:
+  "header  header"
+  "principal principal"
+ "footer   footer";
+
+}
+
+
+.header__area {
+grid-area: header;
+}
+
+.formulario1 {
+  grid-area: principal;
+  }
+  
+
+.redes__footer {
+grid-area: footer;
+}
+
+
+.titular__contacto {
+  display: block;
+  font-family: "inherit";
+  font-weight: inherit;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px;
+}
+.formulario1{
+  margin:20px;
+}

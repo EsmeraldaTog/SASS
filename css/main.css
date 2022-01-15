@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor__principal {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header  header" "principal principal" "imagenes imagenes" "sucursales_index sucursales_index" "footer   footer"; }
+
+.header__area {
+  grid-area: header; }
+
+.main__contenedor {
+  grid-area: principal; }
+
+.seccion__anuncios {
+  grid-area: imagenes; }
+
+.sucursales_index {
+  grid-area: sucursales_index; }
+
+.redes__footer {
+  grid-area: footer; }
+
+/*EMPIEZA grilla principal contacto*/
+.contenedor__contacto {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header  header" "principal principal" "footer   footer"; }
+
+.header__area {
+  grid-area: header; }
+
+.formulario1 {
+  grid-area: principal; }
+
+.redes__footer {
+  grid-area: footer; }
+
+.titular__contacto {
+  display: block;
+  font-family: "inherit";
+  font-weight: inherit;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px; }
+
+.formulario1 {
+  margin: 20px; }
+
+.header__area .header__logo {
+  max-width: 100%; }
+
+.header__area .header__list {
+  display: flex;
+  list-style: none;
+  /*justify-content: flex-end;*/ }
+  .header__area .header__list .header__Item {
+    border: 15px;
+    margin: 0px 6px; }
+    .header__area .header__list .header__Item .header__link {
+      color: #F28705;
+      font-weight: 400 bold; }
+
+.main__contenedor {
+  width: 90%;
+  padding-bottom: 20px; }
+  .main__contenedor .hero__imagen {
+    width: 100%; }
+
+.seccion__anuncios {
+  padding-bottom: 60px;
+  background-color: white; }
+
+.sucursales_index {
+  margin-bottom: 50px;
+  text-align: center; }
+  .sucursales_index .sucursales__titular {
+    background-color: #F28705;
+    text-align: center;
+    color: white; }
+
+/*PRINCIPAL SECCION CONTACTO-FORMULARIO*/
+.formulario1 {
+  align-items: center;
+  padding-bottom: 100px; }
+  .formulario1 .titular__contacto {
+    display: block;
+    font-family: 'inherit';
+    font-weight: inherit;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20PX;
+    color: #F2B3D6; }
+  .formulario1 .parrafo__descripcion {
+    color: #D91A83; }
+    .formulario1 .parrafo__descripcion .parrafo__contacto {
+      text-align: justify;
+      line-height: 2;
+      font-weight: 300;
+      color: #D91A83; }
+  .formulario1 .formulario__contacto {
+    align-items: center;
+    /*background-color:#B4D9B6;*/
+    background-image: linear-gradient(to left bottom, #6fbfbf, #6cbfbd, #69bfbb, #66bfb9, #63bfb6);
+    border-radius: 20px;
+    border: solid 3px;
+    font-weight: 300;
+    color: white; }
+  .formulario1 .contact-image {
+    text-align: center; }
+    .formulario1 .contact-image .form-group {
+      padding-bottom: 5px; }
+      .formulario1 .contact-image .form-group .form-control {
+        border-radius: 10px; }
+
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -4%;
+  transform: rotate(29deg); }
+
+.boton_contacto {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+  align-items: center; }
+
+input {
+  padding: 5px;
+  margin: 5px;
+  width: 80px; }
+
+.redes__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F28705; }
+  .redes__footer .contenedor__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F28705; }
+  .redes__footer .header__list2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 400; }
+    .redes__footer .header__list2 .footer__link {
+      /*background-color: lightseagreen;*/
+      font-weight: bold  400;
+      color: white;
+      text-decoration: none;
+      padding-right: 40px;
+      background-color: #F28705; }
+  .redes__footer .social__media {
+    background-color: #F28705; }
+    .redes__footer .social__media .social__titulo {
+      margin: 5px;
+      text-align: center;
+      color: #7E9BF2;
+      font-weight: 300 bold; }
+      .redes__footer .social__media .social__titulo .social__boton {
+        margin: 5px;
+        text-align: center;
+        color: #7E9BF2;
+        font-weight: 300 bold; }
+  .redes__footer .social__copyright {
+    background-color: #F28705;
+    width: 100%; }

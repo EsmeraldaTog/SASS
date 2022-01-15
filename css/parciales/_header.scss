@@ -1,0 +1,30 @@
+.header__area{
+
+    .header__logo {
+      max-width: 100%;
+    }
+
+    .header__list {
+      display: flex;
+      list-style: none;
+        /*justify-content: flex-end;*/
+
+        .header__Item {
+          border: 15px;
+          margin: 0px 6px;
+         
+          
+          
+          .header__link{
+              color: #F28705;
+              font-weight: 400 bold;
+          }
+    }
+
+
+     
+          }
+ 
+  
+    }
+  

@@ -1,0 +1,120 @@
+.main__contenedor {
+    width: 90%;
+    padding-bottom: 20px;
+   
+    .hero__imagen{
+     width: 100%;
+    
+    }
+      
+   
+}
+
+.seccion__anuncios{
+  padding-bottom: 60px;
+  background-color: white;
+}
+  
+
+
+.sucursales_index{
+    margin-bottom: 50px;
+   text-align: center;
+    
+    .sucursales__titular{
+        background-color: #F28705;
+        text-align: center;
+        color: white;
+      
+    }
+  }
+  
+  
+  
+  /*PRINCIPAL SECCION CONTACTO-FORMULARIO*/
+  
+  .formulario1{
+    align-items: center;
+    padding-bottom: 100px;
+    .titular__contacto{
+      display: block;
+      font-family:'inherit';
+      font-weight: inherit;
+      font-size: 3rem;
+      text-align: center;
+      padding: 20PX;
+      color:#F2B3D6;
+
+    }
+    
+    .parrafo__descripcion{
+      color: $color-secundario;
+      .parrafo__contacto{
+           
+            text-align: justify;
+            line-height:2;
+            font-weight: 300;
+            color: $color-secundario;
+    }
+
+  }
+           
+  .formulario__contacto {
+                
+                align-items: center;
+                /*background-color:#B4D9B6;*/
+                background-image: linear-gradient(to left bottom, #6fbfbf, #6cbfbd, #69bfbb, #66bfb9, #63bfb6);
+          
+                border-radius: 20px;
+                 border:solid 3px;
+               font-weight: 300;
+                color: white;}
+
+          
+               
+                .contact-image{
+                  text-align: center;
+            
+                
+                  .form-group{
+                    
+                    padding-bottom: 5px;
+                    
+                      .form-control{
+                      border-radius: 10px;
+                    
+                    }
+                }
+                  }
+                 
+              }
+            
+              .contact-image img{
+                border-radius: 6rem;
+                width: 11%;
+                margin-top: -4%;
+                transform: rotate(29deg);
+        
+            }
+              
+            .boton_contacto{
+              width: 50%;
+            border-radius: 1rem;
+            padding: 1.5%;
+            color: #fff;
+            background-color: #0062cc;
+            border: none;
+            cursor: pointer;
+            align-items: center;
+              
+            }  
+            
+            
+                input{
+              padding: 5px;
+              margin: 5px;
+              width: 80px;
+            }
+           
+            
+          
