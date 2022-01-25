@@ -3,12 +3,14 @@
     background-color: $color-fondo;
      display:grid;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(7, auto);
   
     grid-template-areas:
     "header  header"
-    "principal principal"
+    "hero  hero"
+    "separador separador"
     "imagenes imagenes"
+    "principal principal"
     "sucursales_index sucursales_index"
    "footer   footer";
   
@@ -19,13 +21,20 @@
   grid-area: header;
   }
   
-  .main__contenedor {
-    grid-area: principal;
+  .hero__contenedor {
+    grid-area: hero;
     }
-    
   
+    .espacio__separador{
+      grid-area:separador;
+    }
+ 
   .seccion__anuncios {
   grid-area: imagenes;
+  }
+  
+  .main__carrousel{
+    grid-area:principal;
   }
   
   .sucursales_index{
@@ -37,11 +46,109 @@
   grid-area: footer;
   }
   
-/*EMPIEZA grilla principal contacto*/
+/*EMPIEZA GRILLA PAGINA NOSOTROS*/
+
+.contenedor__nosotros{
+ 
+  background-color: $color-fondo;
+  display:grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(3, auto);
+
+  grid-template-areas:
+  "header  header"
+  "principal principal"
+  "footer   footer";
+
+}
+
+
+.header {
+grid-area: header;
+}
+
+
+.main__nosotros {
+grid-area: principal;
+}
+
+  
+.redes__footer {
+grid-area: footer;
+}
+
+
+
+
+
+
+/*empieza grilla pagina menu*/
+
+
+.contenedor__menuprincipal {
+  background-color: $color-fondo;
+  margin: 0 auto;
+  width: 80%;
+
+  display:grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(3, auto);
+
+  grid-template-areas:
+  "header  header"
+  "principal principal"
+  "footer   footer";
+
+}
+
+
+.header {
+  grid-area: header;
+  }
+  
+ 
+  .menu {
+  grid-area: principal;
+  }
+
+  .redes__footer{
+    grid-area:footer;
+
+      }
+
+
+      /*inicia grilla sucursales*/
+      .contenedor__sucursalprincipal {
+        background-color: black;
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3, auto);
+      
+        grid-template-areas:
+        "header  header"
+        "principal principal"
+        "footer   footer";
+      
+      }
+      
+      
+      .header {
+        grid-area: header;
+        }
+        
+       
+        .sucursales {
+        grid-area: principal;
+        }
+      
+        .redes__footer{
+          grid-area:footer;
+      
+            }
+      /*EMPIEZA grilla principal contacto*/
 
 .contenedor__contacto {
   background-color:  $color-fondo;
-
   display:grid;
   grid-template-columns: repeat(2,auto);
   grid-template-rows: repeat(3, auto);

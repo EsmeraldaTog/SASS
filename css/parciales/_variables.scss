@@ -1,2 +1,22 @@
 $color-fondo:black;
+$color-primario:#03A6A6;
 $color-secundario:#D91A83;
+$color-terciario:#F28705;
+
+ 
+
+ 
+$sizes1: (
+    "titulares": 22px,
+    "parrafos":  18px,
+    "espacios": 16px,
+    "botones": 14px,
+  
+  );
+  
+  
+  @mixin center-row{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}

@@ -3,7 +3,10 @@
     .header__logo {
       max-width: 100%;
     }
-
+.navbar-toggler{
+  background-color: $color-terciario;
+  border:none;
+}
     .header__list {
       display: flex;
       list-style: none;
@@ -12,12 +15,14 @@
         .header__Item {
           border: 15px;
           margin: 0px 6px;
+          border-bottom: 1px solid $color-terciario;
          
           
           
           .header__link{
               color: #F28705;
-              font-weight: 400 bold;
+              font-weight: 300 bold;
+              font-size: 0.8rem;
           }
     }
 

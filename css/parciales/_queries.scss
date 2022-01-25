@@ -1,0 +1,23 @@
+
+@media only screen and (min-width: 320px) and (max-width:768px){
+   /* Grid de 3cx4r */
+   
+   .contenedor__menu{
+     
+   .grid__menu{
+
+   
+   display: flex;
+   flex-direction: column;
+}
+}
+
+.sucursales{
+.contenedor__sucursal1{
+  @include  center-row;
+}
+.contenedor__sucursal2{
+  @include center-row;
+}
+}
+}

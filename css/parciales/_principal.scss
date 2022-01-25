@@ -1,36 +1,295 @@
-.main__contenedor {
-    width: 90%;
-    padding-bottom: 20px;
-   
-    .hero__imagen{
-     width: 100%;
-    
-    }
-      
-   
+
+/*main index*/
+@import "./variables";
+
+
+
+  .hero__contenedor {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/portada_anuncio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 90vh;
+    /* width: 100vh; */
+  
+      .hero{
+  
+        padding-top: 380px;
+
+           &__titular{
+            font-family: "Open Sans";
+            color: white;
+            font-size: 50px bold;
+                   }
+             &__parrafo{
+              font-family: "Open Sans";
+            font-weight: 400 ;
+            color: white;
+            font-size: map-get($sizes1, parrafos );
+                    }
+  &__boton{
+            display: flex;
+            
+            
+    font-family: "Open Sans";
+            font-weight: 400;
+            width: 200px;
+            color: white;
+            background-color: #F28705;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            border-radius: 10px;
+}
 }
 
-.seccion__anuncios{
-  padding-bottom: 60px;
-  background-color: white;
+.linea__separador{
+  display: block;
+  color:white;
+  height: 10px;
 }
-  
+  }
+ 
+
+.seccion__anuncios{
+padding-top: 20px;
+background-color: black;
+padding-bottom: 20px;
+
+.seccion__titular{
+  text-align: center;
+  color: $color-terciario;
+  margin-bottom: 15px;
+  font-family: "Open Sans";
+
+}
+
+.card{
+  background-color:white;
+  height: 100%;
+  .card-text{
+    font-size: 12px;
+    
+  }
+  .btn{
+    border:none;
+    border-radius: 15px;
+    background-color: $color-terciario;
+  }
+  .card-title{
+    text-align: center;
+  }
+}
+
+}
+
+
+  .main__carrousel{
+     width: 60%;
+     padding-bottom: 20px;
+    .main__titular{
+      color:$color-terciario;
+      font-family: "Open Sans";
+      text-align: center;
+      padding-bottom: 20px;
+    }
+     .hero__imagen{
+      width: 100%;
+      
+     
+     }
+}
+
 
 
 .sucursales_index{
+   padding-top: 50px ;
     margin-bottom: 50px;
    text-align: center;
     
     .sucursales__titular{
-        background-color: #F28705;
+     
         text-align: center;
         color: white;
+        font-family: "Open Sans";
+        padding-bottom: 10px;
       
-    }
+      }
+      .boton__sucursal{
+        background-color: $color-terciario;
+        border:none;
+      }
   }
   
   
+  /*EMPIEZA MAIN  NOSOTROS */
+
+
+.main__nosotros{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.descripcion{
+  font-family: "Open Sans";
+  font-size: 20px;
+  color:$color-primario;
+  &__titular {
+   
+    @extend .descripcion;
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__contenido {
+    @extend .descripcion;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+   text-align: justify;
+   font-size:1rem;
+   
+  }
+}
   
+ 
+  .imagen__nosotros {
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  
+/*PRINCIPAL SECCION MENU*/
+/*principal de pagina menu*/
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans";
+  color: $color-secundario;
+
+
+  &__titular {
+  
+    @extend .menu;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    
+
+  }
+  &__parrafo {
+
+    @extend .menu;
+    border: 30px;
+   text-align: justify;
+    line-height: 2;
+    font-size: 1.2rem;
+ 
+  
+  
+}
+
+  .grid__menu{
+    /* Grid de 3cx4r */
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+gap:6vh 2vh;
+justify-content: center;
+
+.listado{
+  display: flex;
+  flex-direction: column;
+}
+.texto__menu{
+
+  display: inline;
+  text-align: center;
+  color: #f285c1;
+  
+  font-family: "inherit";
+  font-weight: inherit;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+
+}
+.imagen_menu{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button__menu{
+  
+  width: 150px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
+
+} 
+
+
+
+/*principal SECCION SUCURSALES*/
+
+
+.contenedor__sucursales {
+  display: flex;
+  flex-direction:row;
+  
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*  color: white;*/
+  font-size: 1.5rem;
+  margin: 30px;
+
+  .titular__sucursal {
+    text-align: center;
+     color:$color-terciario;
+  }
+}
+
+.contenedor__sucursal1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  .sucursal1__texto{
+    margin-right: 15px;
+  }
+}
+
+
+
+
+.contenedor__sucursal2 {
+  display: flex;
+  justify-content:center;
+  margin-top: 100px;
+  
+  .sucursal2__texto{
+    margin-right: 15px;
+  }
+}
+
+
+
+
+.ubicacion {
+  color: #04ADBF;
+}
+
   /*PRINCIPAL SECCION CONTACTO-FORMULARIO*/
   
   .formulario1{
@@ -116,5 +375,5 @@
               width: 80px;
             }
            
-            
+        
           
