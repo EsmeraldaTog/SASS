@@ -87,9 +87,6 @@ grid-area: footer;
 
 .contenedor__menuprincipal {
   background-color: $color-fondo;
-  margin: 0 auto;
-  width: 80%;
-
   display:grid;
   grid-template-columns: repeat(2,auto);
   grid-template-rows: repeat(3, auto);
@@ -102,7 +99,7 @@ grid-area: footer;
 }
 
 
-.header {
+.header__area {
   grid-area: header;
   }
   
@@ -176,7 +173,7 @@ grid-area: footer;
 
 
 .titular__contacto {
-  display: block;
+
   font-family: "inherit";
   font-weight: inherit;
   font-size: 3rem;

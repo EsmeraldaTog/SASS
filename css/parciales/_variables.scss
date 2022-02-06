@@ -7,8 +7,8 @@ $color-terciario:#F28705;
 
  
 $sizes1: (
-    "titulares": 22px,
-    "parrafos":  18px,
+    "titulares": 28px,
+    "parrafos":  20px,
     "espacios": 16px,
     "botones": 14px,
   
@@ -19,4 +19,10 @@ $sizes1: (
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
+}
+
+@mixin center-column{
+  display:flex;
+  flex-direction: row;
+  justify-content: start;
 }

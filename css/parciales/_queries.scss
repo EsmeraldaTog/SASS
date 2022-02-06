@@ -1,9 +1,8 @@
 @import "./css/parciales/variables";
 
 
-@media only screen and (min-width: 320px) and (max-width:768px){
-   /* Grid de 3cx4r */
-   
+@media only screen and (min-width: 320px) and (max-width:767px){
+  
    .menu{
      
    .grid__menu{
@@ -11,6 +10,9 @@
 }
 }
 
+.galeria__contenedor{
+  @include center-row;
+}
 .sucursales{
 .contenedor__sucursal1{
   @include  center-row;
@@ -18,5 +20,10 @@
 .contenedor__sucursal2{
   @include center-row;
 }
+}
+
+.header__list2{
+  @include center-column;
+  
 }
 }

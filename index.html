@@ -8,9 +8,10 @@
 <meta name="description" content="Cafeteria Local, Espacio de Convivencia, emprendimiento">
 <meta name="keywords" content="CAFETERIA, CAFE, CO-WORKING, BEBIDAS, BOCADILLOS, SNACKS">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -65,18 +66,20 @@
     
 
 
-      <div class="hero__contenedor d-flex align-items-end">
+      <div class="hero__contenedor ">
 
-      <div class="container">
-      <div class="hero  d-flex flex-column">
+      <div class="hero">
+        <div class= "contenedor2">
+          
+     
       <h1 class="hero__titular">BIENVENIDOS A CAFE LOCAL</h1>
       <p class="hero__parrafo">Conoce un nuevo concepto de Cafeteria</p>
-      <a class="hero__boton btn btn-primary d-flex justify-content-center" href="#" role="button">Nuestro Menu</a>
+      <a class="hero__boton btn btn-primary" href="#" role="button">Nuestro Menu</a>
       </div>
       </div>
 
-      
-      </div>
+    </div>
+     
       <div class="espacio__separador">
         
         <hr class="linea__separador">
@@ -103,7 +106,7 @@
     <div  class="row">
       <div  class=" col-md-6 col-lg-3 mb-4">
         <div  class="card " data-aos-duration="2000" data-aos="flip-left">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
             <img src="./assets/anticipa_pedido.png" class="card-img-top main__imagen2 " alt="...">
             <h5 class="card-title">AHORA PUEDER ANTICIPAR TU PEDIDO</h5>
             <p class="card-text">Disfruta de nuestros alimentos desde casa, solicita tu pedido para llevar, lo tendremos listo para que sólo pases por el.</p>
@@ -115,7 +118,7 @@
 
     <div  class="col-md-6 col-lg-3 mb-4">
       <div  class="card " data-aos-duration="2000" data-aos="flip-left">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
           <img src="./assets/desayunos_2022.jpg" class="card-img-top main__imagen2 " alt="...">
           <h5 class="card-title">AMPLIAMOS NUESTRA CARTA</h5>
           <p class="card-text">Ven y prueba nuestro menu de Desayunos</p>
@@ -158,49 +161,56 @@
 
 
 </div>
-  </section>
+</section>
 
-<div class="main__carrousel m-auto">
-  <h2 class= "main__titular"> GALERIA </h2>
+<div class="main__carrousel ">
+  <h2 class= "galeria__titular"> GALERIA </h2>
   
+  <div class="galeria__contenedor">
+    
+ 
+  <div class= "galeria__item" data-aos="zoom-in" data-aos-duration="3000" >
+  <img class= "galeria__img" src="./assets/cafe.jpg" alt="">
+ 
+  </div> 
 
-  
-  <div data-aos="zoom-in-up" data-aos-duration="3000" id="carouselExampleIndicators" class="carousel slide  m-auto" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/carrusel_1.jpg" class="d-block w-100 hero__imagen" alt="...">
+  <div class= "galeria__item" data-aos="zoom-in-up"data-aos-duration="3000" >
+    <img class= "galeria__img" src="./assets/33.jpg" alt="">
+   
+    </div> 
+<div class= "galeria__item" data-aos="zoom-in" data-aos-duration="3000">
+<img class= "galeria__img" src="./assets/3.jpg" alt="">
+
+</div> 
+<div class= "galeria__item" data-aos="zoom-in-up"data-aos-duration="3000">
+<img class= "galeria__img" src="./assets/26.jpg" alt="">
+
+</div> 
+<div class= "galeria__item" data-aos="zoom-in" data-aos-duration="3000" >
+<img class= "galeria__img" src="./assets/5.jpg" alt="">
+
+</div> 
+<div class= "galeria__item" data-aos="zoom-in-up" data-aos-duration="3000" >
+  <img class= "galeria__img" src="./assets/frappe.jpg" alt="">
+
+  </div> 
+  <div class= "galeria__item"data-aos="zoom-in"data-aos-duration="3000">
+    <img class= "galeria__img" src="./assets/29.jpg" alt="">
+
+    </div> 
+
+ 
+
+
+
       </div>
-      <div class="carousel-item">
-        <img src="./assets/cafe.jpg" class="d-block w-100 hero__imagen" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/cafe3.jpg" class="d-block w-100 hero__imagen" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/carrousel_3.jpg" class="d-block w-100 hero__imagen" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
 
 </div>
-  <div class=" container sucursales_index justify-content-center">
+  <div class=" container sucursales_index justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
      
    
-      <h2 class="sucursales__titular m-auto">VISITANOS EN NUESTRAS DOS SUCURSALES</h2>
+      <h2 class="sucursales__titular m-auto ">VISITANOS CAFE LOCAL TE ESTA ESPERANDO</h2>
       <a href="./secciones/sucursales.html" class=" boton__sucursal btn btn-primary">Ubicanos</a>
     
       </div>
@@ -214,19 +224,14 @@
 
 
 
-   
+  
 
-
-
-    
-
- 
-
-
-      <footer class="redes__footer text-center text-white" style="background-color: #f1f1f1;">
-        <div class= "contenedor__footer">
+      <footer class="redes__footer text-center text-white">
+        <div class= "container contenedor__footer ">
+          <div class="row">
+          <div class="col-md-12 col-lg-12 ">
         
-          <ul class="header__list2 m-auto">
+          <ul class="header__list2 d-flex justify-content-center">
                    <li class="header__Item"><a class="footer__link" href = "./index.html"">Inicio</a></li>
                    <li class="header__Item"><a class="footer__link" href= "./secciones/nosotros.html">Nosotros</a></il>
                    <li class="header__Item"><a class="footer__link" href="./secciones/menu.html">Menu</a></li>
@@ -234,38 +239,42 @@
                    <li class="header__Item"><a class="footer__link" href="./secciones/contacto.html">Contacto</a></li>
                    </ul> 
         </div>
-        <!-- Grid container -->
-        <div class="container social__media mw-100">
-          
-          <!-- Section: Social media -->
-          <section>
-            <h5 class =" social__titulo">Siguenos en Nuestras Redes Sociales</h5>
-            <a class="social__boton btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/cafelocalferrocarriloax" role="button" data-mdb-ripple-color="dark">
-              <i class="bi bi-facebook"></i></a>
-      
-            <!-- Twitter -->
-            <a class="social__boton btn btn-link btn-floating btn-lg text-dark m-1"  href="https://www.twitter.com"
-              role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i></a>
-      
-            <!-- Instagram -->
-            <a  class="social__botonbtn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/cafelocaloax!" role="button" data-mdb-ripple-color="dark">
-            <i class="bi bi-instagram"></i></a>
-      
-            <!-- whatsapp -->
-            <a class="social__boton btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark">
-            <i class="bi bi-whatsapp"></i></a>
-            
-          </section>
-          <!-- Section: Social media -->
+        
+       
+        <div class="col-md-12 col-lg-4 social__ubicacion">
+          <p>Sucursal Matriz</p>
+       <p> Av. Ferrocarril 117, Sta Cruz Amilpas, 71226 Santa Cruz Amilpas, Oax. </p>
+       
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="social__copyright text-center text-dark p-3" ">
-          © 2021 Copyright:
+
+        <div class="col-md-12 col-lg-4 social__logo">
+          <img class ="footer__logo" src="./assets/nuevo_logo.png " alt ="logocafelocal ">
          
+          </div>
+        
+        <div class="col-md-12 col-lg-4 social__redes align-self-center ">
+        <h5 class ="social__titulo">Siguenos en Nuestras Redes Sociales</h5>
+          <a class="social__boton btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/cafelocalferrocarriloax" role="button" data-mdb-ripple-color="dark">
+          <i class="bi bi-facebook"></i></a>
+    
+          <!-- Twitter -->
+          <a class=" social__boton btn btn-link btn-floating btn-lg text-dark m-1"  href="https://www.twitter.com"
+            role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i></a>
+    
+          <!-- Instagram -->
+          <a  class="social__boton btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/cafelocaloax!" role="button" data-mdb-ripple-color="dark">
+          <i class="bi bi-instagram"></i></a>
+    
+          <!-- whatsapp -->
+          <a class="social__boton btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+          <i class="bi bi-whatsapp"></i></a>
+          
+          </div>
         </div>
-        <!-- Copyright -->
+
+         </div>
+       
+        
       </footer>
 
 

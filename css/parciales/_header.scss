@@ -1,7 +1,7 @@
 .header__area{
 
     .header__logo {
-      max-width: 100%;
+      max-width: 80%;
     }
 .navbar-toggler{
   background-color: $color-terciario;
@@ -10,6 +10,7 @@
     .header__list {
       display: flex;
       list-style: none;
+      
         /*justify-content: flex-end;*/
 
         .header__Item {
@@ -20,11 +21,23 @@
           
           
           .header__link{
+            font-family: 'Roboto', sans-serif;
+          font-weight: 300 bold;
+          
               color: #F28705;
-              font-weight: 300 bold;
+             
               font-size: 0.8rem;
-          }
-    }
+            }
+            
+                          .header__link:hover {
+                            transform: scale(1.2);
+                            background-color: #F28705;
+                            color: white;
+                          }
+            
+
+              
+        }
 
 
      
@@ -32,4 +45,3 @@
  
   
     }
-  

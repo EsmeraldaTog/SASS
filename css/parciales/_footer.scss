@@ -1,70 +1,68 @@
 .redes__footer {
-    display: flex;
-    flex-direction: column;
     
-    justify-content: center;
     background-color: #F28705;
   
    
     .contenedor__footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      align-items: center;
+     
       background-color: #F28705;
      
+      .header__list2 {
+        
+        list-style: none;
+        font-weight: 400;
+        font-size: 16px;
+        padding-top: 10px;
+        
+        
+        
+        .footer__link {
+            
+            /*background-color: lightseagreen;*/
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold  100 ;
+            color: white;
+            text-decoration: none;
+            padding-right: 25px;
+            background-color: #F28705;
+          }
     }
-    
-    .header__list2 {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      font-weight: 400;
+    .social__ubicacion{
+      font-family: 'Roboto', sans-serif;
+    }
+    .social__logo {
+      background-color: #F28705;
       
-      
-      
-      .footer__link {
+      .footer__logo{
+       max-width: 80%;
+        
+      }
+
+      .social__redes{
+      .social__titulo {
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        
+        
+        .social__boton {
+          margin: 5px;
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100 bold;
           
-          /*background-color: lightseagreen;*/
-          
-      
-          font-weight: bold  400 ;
-          color: white;
-          text-decoration: none;
-          padding-right: 40px;
-          background-color: #F28705;
         }
-      
+              
+          }
+      }
     }
-    
-    .social__media {
+    }}
+   /*   .social__copyright{
         background-color: #F28705;
-        
-        .social__titulo {
-            margin: 5px;
-            text-align: center;
-            color: #7E9BF2;
-            font-weight: 300 bold;
-            
-            .social__boton {
-                margin: 5px;
-                text-align: center;
-                color: #7E9BF2;
-                font-weight: 300 bold;
-                
-            }
-            
-        }
-    }
-    .social__copyright{
-      background-color: #F28705;
-      width: 100%;
-     
-    }
-        
-}
+        width: 100%;
+       
+      }
+          
+  }
+}*/
 
-  
-
-   
